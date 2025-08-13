@@ -7,25 +7,31 @@
     body {
       background-color: gray;
       margin: 0;
-      height: 100vh; /* full screen height */
+      height: 100vh;
       display: flex;
-      justify-content: center; /* center horizontally */
-      align-items: center; /* center vertically */
+      justify-content: center;
+      align-items: center;
       font-family: "Georgia", "Times New Roman", serif;
     }
     .container {
       text-align: center;
+      width: 100%;
+      max-width: 1200px; /* stop expanding after this */
+      padding: 10px
     }
     img {
       display: block;
       margin: 0 auto;
-      width: 800px; /* fixed width so button matches */
+      width: 100%;
+      max-width: 1200px; /* same limit as container */
+      height: auto; /* keep aspect ratio */
     }
     .link-button {
       display: block;
-      width: 800px; /* match image width */
-      padding: 12px 0;
-      margin-top: 20px;
+      width: 100%;
+      max-width: 1200px; /* same as image */
+      padding: 16px 0;
+      margin: 20px auto 0;
       background-color: #005A9C; /* Dodgers blue */
       color: white;
       text-decoration: none;
