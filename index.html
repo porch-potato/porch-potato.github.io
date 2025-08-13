@@ -2,37 +2,51 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Frank Rodriguez Celebration of Life</title>
+  <title>My GitHub Page</title>
   <style>
     body {
       background-color: gray;
-      text-align: center; /* centers text and inline elements */
-      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh; /* full screen height */
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center; /* center vertically */
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+    .container {
+      text-align: center;
     }
     img {
       display: block;
       margin: 0 auto;
+      width: 500px; /* fixed width so button matches */
     }
     .link-button {
-      display: inline-block;
-      padding: 10px 20px;
+      display: block;
+      width: 500px; /* match image width */
+      padding: 12px 0;
       margin-top: 20px;
-      background-color: #007BFF;
+      background-color: #005A9C; /* Dodgers blue */
       color: white;
       text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
       border-radius: 5px;
-      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
     .link-button:hover {
-      background-color: #0056b3;
+      background-color: #004B82; /* darker blue on hover */
     }
   </style>
 </head>
 <body>
 
-  <img src="IMG_8238.JPG" alt="My photo" width="500">
-
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSep0H2fMq8bF2L5Vc-haOiewlactnio0ilN7uGSdLhoDhxtzQ/viewform" class="link-button">Click Here to R.S.V.P</a>
+  <div class="container">
+    <img src="IMG_8238.JPG" alt="My photo">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSep0H2fMq8bF2L5Vc-haOiewlactnio0ilN7uGSdLhoDhxtzQ/viewform" class="link-button">Click Here to R.S.V.P</a>
+  </div>
 
 </body>
 </html>
